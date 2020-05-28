@@ -31,7 +31,7 @@
     <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css"
     />
     <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
 		http://owlcarousel2.github.io/OwlCarousel2/ -->
@@ -82,7 +82,7 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
               <li class="nav-item"><a href="#features" class="nav-link">FEATURES</a></li>
-              <li class="nav-item"><a href="#porfolio" class="nav-link">PORFOLIO</a></li>
+              <li class="nav-item"><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
               <li class="nav-item"><a href="#pricing" class="nav-link">PRICING</a></li>
               <li class="nav-item"><a href="#team" class="nav-link">TEAM</a></li>
               <li class="nav-item"><a href="#skills" class="nav-link">SKILLS</a></li>
@@ -104,16 +104,16 @@
 
       <!-- Start Landing Page Caption -->
       <div class="caption text-center text-light text-uppercase">
-        <h1 class="font-weight-bold os-animation" data-animation="bounceInUp" data-delay=".6s">
+        <h1 class="font-weight-bold os-animation" data-animation="fadenUp" data-delay=".6s">
           welcome to <span class="text-nuno">nuno</span>
         </h1>
-        <h3 class="os-animation" data-animation="bounceInUp" data-delay=".8s">
+        <h3 class="os-animation" data-animation="fadeInUp" data-delay=".8s">
           animated boostrap theme
         </h3>
         <a
           href="#features"
           class="btn btn-outline-light btn-lg rounded-0 os-animation"
-          data-animation="bounceInUp"
+          data-animation="fadeInUp"
           data-delay="1s"
           >get started</a
         >
@@ -127,7 +127,11 @@
         </div>
       </a>
       <!-- End Bouncing Down Arrow -->
+    </div>
+    <!-- End Home Section -->
 
+    <!-- Start Features Section -->
+    <div id="features" class="offset">
       <!-- Start Theme Heading -->
       <div
         class="row text-center py-4 os-animation justify-content-center"
@@ -139,42 +143,336 @@
             Bootstrap is an open-source front-end library with HTML and CSS based designs. This
             website is built with HTML5, CSS3 and Bootstrap 4.
           </p>
-           <a href="#contact" class="btn btn-secondary btn-sm">Request A Quote</a>
+          <a href="#contact" class="btn btn-secondary btn-sm">Request A Quote</a>
           <a href="#portfolio" class="btn btn-nuno btn-sm">See Our Portfolio</a>
         </div>
       </div>
       <!-- End Theme Heading -->
-    </div>
-    <!-- End Home Section -->
 
-    <!-- Start Features Section -->
-    <div id="feature"></div>
+      <!-- Start Jumbotron -->
+      <div class="jumbotron m-0 py-5">
+        <div class="col-12 os-animation" data-animation="fadeInUp">
+          <h3 class="heading">Features</h3>
+          <div class="heading-underline"></div>
+        </div>
+
+        <div class="container">
+          <div class="row text-center px-lg-4 px-xl-5">
+            <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInLeft">
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-mobile-alt fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>mobile friendly</h3>
+                <p class="lead">
+                  Nuno features a mobie friendly, responsive first website layout using Bootstrap.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInUp">
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-desktop fa-stack-1x fa-inverse" data-fa-transform="shrink-1"></i>
+                </span>
+                <h3>FULL SCREEN LANDING</h3>
+                <p class="lead">
+                  Using Bootstrap, the Nuno theme features a full screen carousel landing page.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInRight">
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i
+                    class="fas fa-play fa-stack-1x fa-inverse"
+                    data-fa-transform="shrink-3.5 right-1"
+                  ></i>
+                </span>
+                <h3>CUSTOM ANIMATION</h3>
+                <p class="lead">
+                  Animate.css and Waypoints.js allow for smooth animations scrolling down the site.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInLeft">
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-angle-double-down fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>PARALLAX SCROLLING</h3>
+                <p class="lead">
+                  Fixed background images allow the theme to have content-filled parallax scrolling
+                  sections.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInUp">
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i
+                    class="fas fa-sliders-h fa-stack-1x fa-inverse"
+                    data-fa-transform="shrink-1"
+                  ></i>
+                </span>
+                <h3>CONTENT SLIDER</h3>
+                <p class="lead">
+                  Owl.Carousel.js makes navigating content sliders seamless with it's content
+                  carousel navigation.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 os-animation" data-animation="fadeInRight">
+              <div class="feature px-2">
+                <span class="fa-stack fa-2x">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-wpforms fa-stack-1x fa-inverse"></i>
+                </span>
+                <h3>CONTACT FORM</h3>
+                <p class="lead">
+                  The Bootsrap HTML form will send directly to your email address using
+                  PHPMailer.php.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Jumbotron -->
+
+      <!-- Start Fixed BG IMG Dark -->
+      <div class="fixed">
+        <div class="row dark text-light text-center">
+          <div class="col-12 os-animation" data-animation="fadeInUp">
+            <h3 class="heading">BUILT WITH CARE</h3>
+            <div class="heading-underline"></div>
+          </div>
+
+          <div class="col-md-4 os-animation" data-animation="fadeInLeft">
+            <h3>HTML 5</h3>
+            <div class="feature py-2">
+              <span class="fa-layers fa-3x">
+                <i class="fab fa-html5"></i>
+              </span>
+            </div>
+            <p class="lead">Built with the latest, HTML 5.</p>
+          </div>
+
+          <div class="col-md-4 os-animation" data-animation="fadeInUp">
+            <h3>BOOTSTRAP</h3>
+            <div class="feature py-2">
+              <span class="fa-layers fa-3x">
+                <i class="fab fa-bootstrap"></i>
+              </span>
+            </div>
+            <p class="lead">Built with the latest, Bootstrap 4.</p>
+          </div>
+
+          <div class="col-md-4 os-animation" data-animation="fadeInRight">
+            <h3>CSS 3</h3>
+            <div class="feature py-2">
+              <span class="fa-layers fa-3x">
+                <i class="fab fa-css3-alt"></i>
+              </span>
+            </div>
+            <p class="lead">Built with the latest, CSS 3.</p>
+          </div>
+        </div>
+        <div class="fixed-wrap">
+          <div class="fixed-dark"></div>
+        </div>
+      </div>
+      <!-- End Fixed BG IMG Dark -->
+    </div>
     <!-- End of Features Section -->
 
     <!-- Start Portfolio Section -->
-    <div id="porfolio"></div>
+    <div id="portfolio" class="offset">
+      <div class="container-fluid px-0">
+        <div class="row justify-content-center py-5">
+          <div class="col-12 mt-5 os-animation" data-animation="fadeInUp">
+            <h3 class="heading">Portfolio</h3>
+            <div class="heading-underline"></div>
+          </div>
+
+          <div
+            class="col-sm-6 col-md-3 p-0 os-animation"
+            data-animation="bounceInLeft"
+            data-delay=".2s"
+          >
+            <div class="portfolio-item overflow-hidden">
+              <a
+                href="img/portfolio/1.jpg"
+                data-lightbox="example-set"
+                data-title="My Portfolio Image Description"
+              >
+                <img src="img/portfolio/1.jpg" alt="" class="example-image w-100" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft">
+            <div class="portfolio-item overflow-hidden">
+              <a
+                href="img/portfolio/2.jpg"
+                data-lightbox="example-set"
+                data-title="My Portfolio Image Description"
+              >
+                <img src="img/portfolio/2.jpg" alt="" class="example-image w-100" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight">
+            <div class="portfolio-item overflow-hidden">
+              <a
+                href="img/portfolio/3.jpg"
+                data-lightbox="example-set"
+                data-title="My Portfolio Image Description"
+              >
+                <img src="img/portfolio/3.jpg" alt="" class="example-image w-100" />
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-md-3 p-0 os-animation"
+            data-animation="bounceInRight"
+            data-delay=".2s"
+          >
+            <div class="portfolio-item overflow-hidden">
+              <a
+                href="img/portfolio/4.jpg"
+                data-lightbox="example-set"
+                data-title="My Portfolio Image Description"
+              >
+                <img src="img/portfolio/4.jpg" alt="" class="example-image w-100" />
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-md-3 p-0 os-animation"
+            data-animation="bounceInLeft"
+            data-delay=".2s"
+          >
+            <div class="portfolio-item overflow-hidden">
+              <a
+                href="img/portfolio/5.jpg"
+                data-lightbox="example-set"
+                data-title="My Portfolio Image Description"
+              >
+                <img src="img/portfolio/5.jpg" alt="" class="example-image w-100" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInLeft">
+            <div class="portfolio-item overflow-hidden">
+              <a
+                href="img/portfolio/6.jpg"
+                data-lightbox="example-set"
+                data-title="My Portfolio Image Description"
+              >
+                <img src="img/portfolio/6.jpg" alt="" class="example-image w-100" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3 p-0 os-animation" data-animation="bounceInRight">
+            <div class="portfolio-item overflow-hidden">
+              <a
+                href="img/portfolio/7.jpg"
+                data-lightbox="example-set"
+                data-title="My Portfolio Image Description"
+              >
+                <img src="img/portfolio/7.jpg" alt="" class="example-image w-100" />
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 col-md-3 p-0 os-animation"
+            data-animation="bounceInRight"
+            data-delay=".2s"
+          >
+            <div class="portfolio-item overflow-hidden">
+              <a
+                href="img/portfolio/8.jpg"
+                data-lightbox="example-set"
+                data-title="My Portfolio Image Description"
+              >
+                <img src="img/portfolio/8.jpg" alt="" class="example-image w-100" />
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-10 col-lg-9 col-xl-8 text-center pt-5 os-animation"
+            data-animation="fadeInUp"
+          >
+            <p class="lead">
+              Get in contact with us to see more of our great portfolio design work in addition to
+              web development projects such as websites, apps and more!
+            </p>
+            <a href="#contact" class="btn btn-secondary btn-sm">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- End of Portfolio Section -->
 
     <!-- Start Pricing Section -->
-    <div id="pricing"></div>
+    
     <!-- End of Pricing Section -->
 
     <!-- Start Team Section -->
-    <div id="team"></div>
+    <div id="team" class="offset"></div>
     <!-- End Team Section -->
 
     <!-- Start Skills Section -->
-    <div id="skills"></div>
+    <div id="skills" class="offset"></div>
     <!-- End of Skills Section -->
 
     <!-- Start Clients Section -->
-    <div id="clients"></div>
+    <div id="clients" class="offset"></div>
     <!-- End of Clients Section -->
 
     <!-- Start Contact Section -->
-    <div id="contact"></div>
+    <div id="contact" class="offset"></div>
     <!-- End Contact Section -->
-
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tempore. Optio autem, dolorem eos
+      reprehenderit deleniti odit vel! Incidunt saepe nisi quo ea culpa mollitia perspiciatis quidem
+      obcaecati pariatur sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tempore.
+      Optio autem, dolorem eos reprehenderit deleniti odit vel! Incidunt saepe nisi quo ea culpa
+      mollitia perspiciatis quidem obcaecati pariatur sit?Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Id, tempore. Optio autem, dolorem eos reprehenderit deleniti odit vel!
+      Incidunt saepe nisi quo ea culpa mollitia perspiciatis quidem obcaecati pariatur sit?Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Id, tempore. Optio autem, dolorem eos
+      reprehenderit deleniti odit vel! Incidunt saepe nisi quo ea culpa mollitia perspiciatis quidem
+      obcaecati pariatur sit?
+    </h1>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tempore. Optio autem, dolorem eos
+      reprehenderit deleniti odit vel! Incidunt saepe nisi quo ea culpa mollitia perspiciatis quidem
+      obcaecati pariatur sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, tempore.
+      Optio autem, dolorem eos reprehenderit deleniti odit vel! Incidunt saepe nisi quo ea culpa
+      mollitia perspiciatis quidem obcaecati pariatur sit?Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Id, tempore. Optio autem, dolorem eos reprehenderit deleniti odit vel!
+      Incidunt saepe nisi quo ea culpa mollitia perspiciatis quidem obcaecati pariatur sit?Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Id, tempore. Optio autem, dolorem eos
+      reprehenderit deleniti odit vel! Incidunt saepe nisi quo ea culpa mollitia perspiciatis quidem
+      obcaecati pariatur sit?
+    </h1>
     <!-- Top Scroll -->
 
     <!-- End of Top Scroll -->
