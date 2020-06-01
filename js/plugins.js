@@ -46,13 +46,33 @@ $(document).ready(function () {
 /*========== LIGHTBOX IMAGE GALLERY ==========*/
 $(document).ready(function () {
   lightbox.option({
-      'resizeDuration': 600,
-      'wrapAround': true,
-      'imageFadeDuration': 500
+    resizeDuration: 600,
+    wrapAround: true,
+    imageFadeDuration: 500,
   });
 });
 /*========== MEET THE TEAM CAROUSEL ==========*/
-
+$(document).ready(function () {
+  $("#team-carousel").owlCarousel({
+    autoplay: true,
+    autoplayHoverPause: true,
+    loop: true,
+    autoplayTimeout: 8000,
+    smartSpeed: 1200,
+    dotsSpeed: 1000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+      },
+    },
+  });
+});
 /*========== SKILLS COUNTER ==========*/
 
 /*========== CLIENTS CAROUSEL ==========*/
