@@ -82,7 +82,24 @@ $(document).ready(function () {
   });
 });
 /*========== CLIENTS CAROUSEL ==========*/
-
+$(document).ready(function () {
+  $("#clients-carousel").owlCarousel({
+    autoplay: true,
+    autoplayHoverPause: true,
+    loop: true,
+    autoplayTimeout: 8000,
+    smartSpeed: 1600,
+    dotsSpeed: 1000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+    },
+  });
+});
 /*========== TOP SCROLL BUTTON ==========*/
 
 /*========== MAKE ALL ANIMATION "FADEINUP" ON MOBILE ==========*/

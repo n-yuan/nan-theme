@@ -350,7 +350,24 @@ ul.social li a:hover {
 }
 
 /*============= CLIENTS SECTION =============*/
-
+#clients-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clients img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.clients img:hover {
+  transform: scale(0.95);
+}
+blockquote .svg-inline--fa {
+  color: #1ebba3;
+  margin: 1rem;
+}
+.clients-hr {
+  border-top: 0.1rem solid #1ebba3;
+}
 /*============= CONTACT SECTION =============*/
 
 /*--- Contact Form --*/
