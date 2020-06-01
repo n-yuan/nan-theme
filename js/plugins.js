@@ -74,7 +74,13 @@ $(document).ready(function () {
   });
 });
 /*========== SKILLS COUNTER ==========*/
-
+$(document).ready(function () {
+  $(".counter").counterUp({
+    delay: 10,
+    time: 3000,
+    beginAt: 0,
+  });
+});
 /*========== CLIENTS CAROUSEL ==========*/
 
 /*========== TOP SCROLL BUTTON ==========*/
