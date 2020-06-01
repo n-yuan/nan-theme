@@ -369,11 +369,75 @@ blockquote .svg-inline--fa {
   border-top: 0.1rem solid #1ebba3;
 }
 /*============= CONTACT SECTION =============*/
+.footer {
+  background: url(../img/footer/footer.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+}
+.row.outer {
+  background-color: rgba(57, 63, 70, 0.85);
+  padding: 1rem 2rem 3rem;
+}
 
+.footer img {
+  height: 2rem;
+  margin: 1.5rem 0;
+}
+
+.footer a,
+.footer ul.social li a {
+  color: white;
+}
+.footer ul.social li a:hover {
+  color: #1ebba3;
+}
+.footer h3 {
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
 /*--- Contact Form --*/
+.form-group {
+  margin-bottom: 1.3rem;
+}
+.form-control {
+  background-color: #53595f;
+  border-radius: 0;
+  border: 0.15rem solid #666b71;
+  color: white !important;
+  font-size: 1.1rem;
+}
+.form-control:focus {
+  background-color: #53595f;
 
+  border: 0.15rem solid #666b71;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b2b5b8 !important;
+}
+
+hr.socket {
+  border-top: 0.2rem solid #666b71;
+  width: 100%;
+}
 /*============= TOP SCROLL =============*/
-
+a.top-scroll {
+  right: 1.2rem;
+  bottom: 1.2rem;
+  position: fixed;
+  opacity: 0.3;
+  z-index: 10000;
+  display: none;
+}
+a.top-scroll:hover {
+  opacity: 0.5;
+}
+.top-scroll .svg-inline--fa {
+  background: white;
+  height: 1.3rem;
+  color: #53595f;
+  font-size: 3rem;
+}
 /*============= MEDIA QUERIES =============*/
 
 /* Devices under 992px (lg) */
